@@ -8,12 +8,17 @@
     <title>Library App</title>
   </head>
   <body class="bg-indigo-700">
-    <form class="bg-white p-10 rounded max-w-xl mx-auto mt-10 space-y-4">
+    <form class="card">
       <h1 class="text-xl font-semibold">Book Library</h1>
       <input type="text" placeholder="Book Title" class="input-field" required>
       <input type="text" placeholder="Book Author" class="input-field" required>
-      <button type="submit" class="px-4 py-1 bg-orange-500 hover:bg-orange-600 font-semibold text-sm text-white rounded">Save</button>
+      <button type="submit" class="btn bg-orange-500 hover:bg-orange-600">Save</button>
     </form>
+    <div class="card bookList-container">
+      <h1 class="text-xl font-semibold">Added Books (<span id="book_count">0</span>)</h1>
+      <ul id="bookList" class="space-y-2">
+      </ul>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
